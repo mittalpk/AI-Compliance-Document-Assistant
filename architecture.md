@@ -1,3 +1,6 @@
+# System Architecture
+
+```mermaid
 flowchart LR
 
     A1[PDFs in UC Volume<br>(GwG, MaRisk, ESG)] --> B1[Consolidated Notebook:<br>AI-Compliance-Document-Assistant.ipynb]
@@ -19,3 +22,7 @@ flowchart LR
       H1
       I1
     end
+```
+
+The design mirrors Databricks' new document intelligence stack while remaining
+fully executable on the Free Edition.
