@@ -1,10 +1,7 @@
-# System Architecture
-
-```mermaid
 flowchart LR
 
-    A1[PDFs in UC Volume\n(GwG, MaRisk, ESG)] --> B1[Consolidated Notebook:\nAI-Compliance-Document-Assistant.ipynb]
-    B1 --> C1[Delta Table:\nextracted_text]
+    A1[PDFs in UC Volume<br>(GwG, MaRisk, ESG)] --> B1[Consolidated Notebook:<br>AI-Compliance-Document-Assistant.ipynb]
+    B1 --> C1[Delta Table:<br>extracted_text]
     C1 --> D1[Token-Based Chunking]
     D1 --> E1[Chunked Text DF]
     E1 --> F1[OpenAI Embeddings]
@@ -22,7 +19,3 @@ flowchart LR
       H1
       I1
     end
-```
-
-The design mirrors Databricks' new document intelligence stack while remaining
-fully executable on the Free Edition.
